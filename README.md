@@ -1,6 +1,8 @@
-# Energy Analysis for Matrix Product
+# Matrix Product
+
+Analysis and Measurement of Energy Comsumption for Matrix Multiplication.
 
 ---
 Authors:
-- [mailto:up201906042@edu.fe.up.pt](Miguel Rodrigues)
-- [mailto:up201905680@edu.fe.up.pt](Sérgio Estêvão)
+- [Miguel Rodrigues](mailto:up201906042@edu.fe.up.pt)
+- [Sérgio Estêvão](mailto:up201905680@edu.fe.up.pt)
