@@ -1,12 +1,13 @@
 /*
- *  colproduct.cpp - Column based multiplication @ CPA, 2023
- *  Authors: Miguel Rodrigues & Sérgio Estêvão
+ *  lineproduct.cpp - Line based matrix multiplication @ CPA, 2023
+ *  Authors: MIguel Rodrigues & Sérgio Estêvão
  */
 #include <cassert>
 #include <chrono>
 #include <memory>
 
 #include "mphelpers.h"
+
 
 // globals & aliases
 using matrix_t = double[];
@@ -20,8 +21,8 @@ mult(const matrix_t a, const matrix_t b)
     auto result = std::make_unique<matrix_t>(N * N);
 
     for (matrix_size_t i = 0; i < N; i++)
-        for (matrix_size_t j = 0; j < N; j++)
-            for (matrix_size_t k = 0; k < N; k++)
+        for (matrix_size_t k = 0; k < N; k++)
+            for (matrix_size_t j = 0; j < N; j++)
                 result[i * N + j] += a[i * N + k] * b[k * N + j];
 
     return result;
@@ -42,9 +43,9 @@ main(void)
     helper.start();
 
     /* perform the computation of matrix multiplication */
-    auto start = std::chrono::steady_clock::now();
+    const auto start = std::chrono::steady_clock::now();
     auto c = mult(a.get(), b.get());
-    auto end = std::chrono::steady_clock::now();
+    const auto end = std::chrono::steady_clock::now();
 
     helper.stop();
 
