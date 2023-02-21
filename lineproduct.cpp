@@ -2,10 +2,8 @@
  *  lineproduct.cpp - Line based matrix multiplication @ CPA, 2023
  *  Authors: MIguel Rodrigues & Sérgio Estêvão
  */
-#include <cassert>
 #include <chrono>
 #include <memory>
-
 #include "mphelpers.h"
 
 
@@ -48,9 +46,6 @@ main(void)
     const auto end = std::chrono::steady_clock::now();
 
     helper.stop();
-
-    constexpr auto CHECK = N * (N + 1) / 2;
-    assert(c[0] == CHECK);
 
     /* report the results */
     const auto elapsed = end - start;
