@@ -1,5 +1,5 @@
 /*
- *  ompproduct.cpp - line based parallel matrix multiplication based on OpenMP
+ *  ompproduct.cpp - row based parallel matrix multiplication based on OpenMP
  *  CPA @ M.EIC, 2023
  *  Authors:
  *      Miguel Rodrigues <up201906042@edu.fe.up.pt>

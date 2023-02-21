@@ -11,18 +11,18 @@ Analysis and Measurement of Energy Comsumption for Matrix Multiplication.
     1. Requires a compatible CPU w/ RAPL, learn more [here](https://web.eece.maine.edu/~vweaver/projects/rapl/rapl_support.html)
     2. See the manual page w/ `man perf`
 4. [OpenMP](https://www.openmp.org/)
-    1. *Optional*, but required in order to execute `./ompproduct`
+    1. *Optional*, but required in order to execute `./ompproduct.out`
 5. [GNU Make](https://www.gnu.org/software/make/)
     1. Again, *optional* - just for compilation convinience
 
 ## Usage
 
 ```sh
-make            # builds colproduct and lineproduct
-./colproduct    # column-based algorithm
-./lineproduct   # line-based algorithm
-./ompproduct    # line-based parallel algorithm
-make clean      # removes executable file
+make                # builds colproduct and lineproduct
+./colproduct.out    # column-based algorithm
+./rowproduct.out    # row-based algorithm
+./ompproduct.out    # row-based parallel algorithm
+make clean          # removes executable file
 ```
 
 In case of measuring energy:

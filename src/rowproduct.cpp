@@ -1,5 +1,5 @@
 /*
- *  lineproduct.cpp - Line based matrix multiplication
+ *  rowproduct.cpp - row based matrix multiplication
  *  CPA @ M.EIC, 2023
  *  Authors:
  *      Miguel Rodrigues <up201906042@edu.fe.up.pt>
