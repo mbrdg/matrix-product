@@ -8,11 +8,14 @@ LDLIBS=-lpapi
 .PHONY: all clean
 
 
-TARGETS=colproduct lineproduct
+TARGETS=colproduct lineproduct ompproduct
 all: $(TARGETS)
 
 %: %.cpp
 	$(CXX) $(CXXFLAGS) $< -o $@ $(LDLIBS)
 
+ompproduct: ompproduct.cpp
+	$(CXX) $(CXXFLAGS) -fopenmp $< -o $@ $(LDLIBS)
+
 clean:
-	$(RM) colproduct lineproduct
+	$(RM) $(TARGETS)
