@@ -1,8 +1,10 @@
-/**
-    papihelper.h - helpers for PAPI
-    CPA, 2023
-    Authors: Miguel Rodrigues & Sérgio Estêvão
-*/
+/*
+ *  mphelpers.h - set of helpers for matrix-product
+ *  CPA @ M.EIC, 2023
+ *  Authors:
+ *      Miguel Rodrigues <up201906042@edu.fe.up.pt>
+ *      Sérgio Estêvão <up201905680@edu.fe.up.pt>
+ */
 #ifndef MPHELPERS_H
 #define MPHELPERS_H
 

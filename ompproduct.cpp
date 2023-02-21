@@ -1,6 +1,9 @@
 /*
- *  ompproduct.cpp - line based matrix multiplication based on OpenMP
- *  Authors: Miguel Rodrigues & Sérgio Estêvão
+ *  ompproduct.cpp - line based parallel matrix multiplication based on OpenMP
+ *  CPA @ M.EIC, 2023
+ *  Authors:
+ *      Miguel Rodrigues <up201906042@edu.fe.up.pt>
+ *      Sérgio Estêvão <up201905680@edu.fe.up.pt>
  */
 #include <chrono>
 #include <memory>

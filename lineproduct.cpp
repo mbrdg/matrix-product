@@ -1,6 +1,9 @@
 /*
- *  lineproduct.cpp - Line based matrix multiplication @ CPA, 2023
- *  Authors: MIguel Rodrigues & Sérgio Estêvão
+ *  lineproduct.cpp - Line based matrix multiplication
+ *  CPA @ M.EIC, 2023
+ *  Authors:
+ *      Miguel Rodrigues <up201906042@edu.fe.up.pt>
+ *      Sérgio Estêvão <up201905680@edu.fe.up.pt>
  */
 #include <chrono>
 #include <memory>

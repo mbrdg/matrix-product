@@ -1,6 +1,9 @@
 /*
- *  colproduct.cpp - Column based multiplication @ CPA, 2023
- *  Authors: Miguel Rodrigues & Sérgio Estêvão
+ *  colproduct.cpp - Column based multiplication
+ *  CPA @ M.EIC, 2023
+ *  Authors:
+ *      Miguel Rodrigues <up201906042@edu.fe.up.pt>
+ *      Sérgio Estêvão <up201905680@edu.fe.up.pt>
  */
 #include <chrono>
 #include <memory>
