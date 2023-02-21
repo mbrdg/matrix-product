@@ -13,7 +13,7 @@
 // globals & aliases
 using matrix_t = double[];
 using matrix_size_t = std::size_t;
-static constexpr matrix_size_t N = 2000;
+static constexpr matrix_size_t N = 1400;
 
 
 std::unique_ptr<matrix_t>
