@@ -26,3 +26,5 @@ make clean      # removes executable file
 Authors:
 - [Miguel Rodrigues](mailto:up201906042@edu.fe.up.pt)
 - [Sérgio Estêvão](mailto:up201905680@edu.fe.up.pt)
+
+[CPA @ M.EIC](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=486270)
