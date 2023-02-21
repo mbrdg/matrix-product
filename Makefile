@@ -2,7 +2,7 @@
 # CPA, 2023
 # Authors: Miguel Rodrigues & Sérgio Estêvão
 CXX=g++
-CXXFLAGS=-std=c++20 -O3 -Wall -Wextra -Werror -pedantic
+CXXFLAGS=-std=c++20 -O2 -Wall -Wextra -Werror -pedantic
 LDLIBS=-lpapi
 
 .PHONY: all clean
