@@ -52,11 +52,6 @@ main(void)
     constexpr auto CHECK = N * (N + 1) / 2;
     assert(c[0] == CHECK);
 
-    /* release the resources taken back to the system */
-    a.reset(nullptr);
-    b.reset(nullptr);
-    c.reset(nullptr);
-
     /* report the results */
     const auto elapsed = end - start;
     cpa::matrix_product::report(helper, elapsed, N);
