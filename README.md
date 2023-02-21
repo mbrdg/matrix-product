@@ -7,8 +7,10 @@ Analysis and Measurement of Energy Comsumption for Matrix Multiplication.
 1. A C++ compiler compatible with C++20
     1. We use [g++](https://gcc.gnu.org/) but others should work fine
 2. [PAPI](https://icl.utk.edu/papi/)
-3. [GNU Make](https://www.gnu.org/software/make/)
-    1. This is *optional*, just for conviniece of compilation
+3. [OpenMP](https://www.openmp.org/)
+    1. *Optional*, but required in order to execute `./ompproduct`
+4. [GNU Make](https://www.gnu.org/software/make/)
+    1. Again, *optional* - just for compilation convinience
 
 ## Usage
 
@@ -16,6 +18,7 @@ Analysis and Measurement of Energy Comsumption for Matrix Multiplication.
 make            # builds colproduct and lineproduct
 ./colproduct    # column-based algorithm
 ./lineproduct   # line-based algorithm
+./ompproduct    # line-based parallel algorithm
 make clean      # removes executable file
 ```
 
