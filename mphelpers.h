@@ -114,7 +114,7 @@ report(const cpa::matrix_product::PAPI_helper& helper,
     const auto capacity = flops / elapsed.count();
     std::cout << "size: " << N << '\n'
               << "flops: " << flops << '\n'
-              << "duration: " << elapsed.count() << '\n'
+              << "duration: " << elapsed.count() << 's' << '\n'
               << "capacity: " << capacity << std::endl;
 
     helper.report();
