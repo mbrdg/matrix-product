@@ -5,7 +5,6 @@
  *      Miguel Rodrigues <up201906042@edu.fe.up.pt>
  *      Sérgio Estêvão <up201905680@edu.fe.up.pt>
  */
-#include <chrono>
 #include <memory>
 #include <omp.h>
 #include "mphelpers.h"
