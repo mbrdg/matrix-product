@@ -94,8 +94,9 @@ private:
 };
 
 
+template<matrix_size_t N>
 constexpr void
-fill(matrix_t a, matrix_t b, const matrix_size_t N)
+fill(matrix_t a, matrix_t b)
 {
     for (matrix_size_t i = 0; i < N; i++) {
         for (matrix_size_t j = 0; j < N; j++) {
@@ -105,10 +106,10 @@ fill(matrix_t a, matrix_t b, const matrix_size_t N)
     }
 }
 
+template<matrix_size_t N>
 void
 report(const cpa::matrix_product::PAPI_helper& helper,
-       const duration_t& elapsed,
-       const matrix_size_t N)
+       const duration_t& elapsed)
 {
     const auto flops = 2 * N * N * N;
     const auto capacity = flops / elapsed.count();

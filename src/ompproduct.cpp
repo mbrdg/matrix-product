@@ -41,7 +41,7 @@ main(void)
     /* matrix allocation and filling */
     auto a = std::make_unique<matrix_t>(N * N);
     auto b = std::make_unique<matrix_t>(N * N);
-    cpa::matrix_product::fill(a.get(), b.get(), N);
+    cpa::matrix_product::fill<N>(a.get(), b.get());
 
     helper.start();
 
@@ -54,7 +54,7 @@ main(void)
 
     /* report the results */
     const auto elapsed = end - start;
-    cpa::matrix_product::report(helper, elapsed, N);
+    cpa::matrix_product::report<N>(helper, elapsed);
 
     return 0;
 }
