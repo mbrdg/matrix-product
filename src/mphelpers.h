@@ -111,7 +111,7 @@ void
 report(const cpa::matrix_product::PAPI_helper& helper,
        const duration_t& elapsed)
 {
-    const auto flops = 2 * N * N * N;
+    constexpr auto flops = 2 * N * N * N;
     const auto capacity = flops / elapsed.count();
     std::cout << "size: " << N << '\n'
               << "flops: " << flops << '\n'
@@ -120,6 +120,7 @@ report(const cpa::matrix_product::PAPI_helper& helper,
 
     helper.report();
 }
+
 }
 
 #endif /* MPHELPERS_H */
